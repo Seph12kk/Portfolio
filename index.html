@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Joseph Rosquita Delos Reyes - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: "Lato", sans-serif;
+      background: url('background.jpg') no-repeat center center;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: white;
+      background-attachment: scroll;
+    }
+
+    .w3-bar .w3-bar-item {
+      text-transform: uppercase;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h1, h2, h3, p {
+      margin: 0;
+      padding: 10px;
+      line-height: 1.5;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .w3-button {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .w3-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .w3-third {
+      flex: 1 1 300px;
+      max-width: 300px;
+      margin: 15px;
+    }
+
+    .w3-round {
+      border-radius: 10px;
+    }
+
+    .fa {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+    }
+
+    .w3-col.m6 {
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .w3-top {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    #home {
+      margin-top: -64px; /* Removes space caused by fixed header */
+    }
+
+    @media (max-width: 600px) {
+      .w3-bar .w3-bar-item {
+        display: block;
+        text-align: left;
+      }
+      .section {
+        padding: 40px 10px;
+      }
+      .w3-third {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large">About</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+      <a href="http://Seph12k.jobs180.com" target="_blank" class="w3-bar-item w3-button w3-padding-large">Resume</a>
+    </div>
+  </div>
+
+  <!-- Home Section - Taller Full Width Background Cover -->
+  <section id="home" style="position: relative; width: 100%; height: 120vh; background: url('cover-home.jpg') center center no-repeat; background-size: contain; margin-top: -64px;">
+    <div style="position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; text-align: center; color: white;">
+      <h1 class="w3-jumbo" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Joseph R. Delos Reyes</h1>
+      <p class="w3-xlarge w3-opacity" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">an Information Technology student with a passion for network and technology.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <div id="about" class="w3-container w3-content w3-center w3-padding-64 section">
+    <h2 class="w3-wide">About Me</h2>
+    <p class="w3-opacity"><i>Here is a little about my background and interests.</i></p>
+    <p class="w3-justify">I am an Information Technology student at Holy Angel University with a focus on networking and technical support. I have a strong interest in troubleshooting and building efficient, secure network systems. I am also certified in various IT disciplines, including Cisco Networking and DevNet Associate. Through my projects and certifications, I am continuously growing my technical expertise and applying them to real-world challenges.</p>
+    <h3>---------------------------------------</h3>
+  </div>
+    
+  <!-- Portfolio Section -->
+  
+  <div id="portfolio" class="w3-container w3-content w3-center w3-padding-64 section">
+    <h2 class="w3-wide">My Portfolio</h2>
+    <p class="w3-opacity"><i>These are some of the projects I have worked on, showcasing my skills and knowledge in IT.</i></p>
+
+    <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Network Simulation Project</p>
+        <img src="network_simulation_project_image.jpg" class="w3-round w3-margin-bottom" alt="Network Simulation Project" style="width:100%">
+      </div>
+      <div class="w3-third">
+        <p>Technical Support System</p>
+        <img src="tech_support_project_image.jpg" class="w3-round w3-margin-bottom" alt="Technical Support System" style="width:100%">
+      </div>
+      <div class="w3-third">
+        <p>Webtech Website Project</p>
+        <img src="FigmaOutput.png" class="w3-round w3-margin-bottom" alt="Webtech Website" style="width:100%">
+      </div>
+    </div>
+    <h3>---------------------------------------</h3>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-32">
+        <p><strong>View my Network Infrastructure Design Project</strong></p>
+        <a href="Simulation_of_a_Network_Infrastructure_Design_for_Amsic_Integrated_School.pdf" class="w3-button w3-black" target="_blank">View PDF</a>
+      </div>
+      <div class="w3-col m6 w3-padding-32">
+        <p><strong>View Webtech Website Project</strong></p>
+        <a href="https://seph12kk.github.io/Motoseph/index.html" class="w3-button w3-black" target="_blank">View Website</a>
+      </div>
+    </div>
+    <h3>---------------------------------------</h3>
+    <div>
+      <h3>Certifications</h3>
+      <ul class="w3-large">
+        <li>CCNAv7 - Switching, Routing, and Wireless Essentials (2024)</li>
+        <li>CCNAv7 - Enterprise Networking, Security, and Automation (2024)</li>
+        <li>CyberOps Associate (2023)</li>
+        <li>DevNet Associate (2024)</li>
+        <li>Introduction to IoT (2021)</li>
+      </ul>
+    </div>
+
+    <h3>---------------------------------------</h3>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="w3-container w3-content w3-center w3-padding-64 section">
+    <h2 class="w3-wide">Contact</h2>
+    <p class="w3-opacity"><i>Feel free to reach out to me.</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Angeles City, Philippines<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +63 919 983 0369<br>
+        <i class="fa fa-facebook" style="width:30px"></i> Facebook: <a href="https://www.facebook.com/Seph12k" target="_blank" style="color:#fff;">Seph12k</a><br>
+        <i class="fa fa-envelope" style="width:30px"></i> Email: josephdelosreyes12345@gmail.com<br>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
